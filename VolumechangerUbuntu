@@ -1,0 +1,27 @@
+ Σύνδεσμος : https://unix.stackexchange.com/questions/21089/how-to-use-command-line-to-change-volume
+
+Terminal commands : 
+
+Για αυξηση χρησιμοποιησε αυτην την εντολη : 
+
+amixer set Master 10%+
+amixer -D pulse sset Master 5%+
+Για μειωση χρησιμοποιησε αυτην την εντολη :
+
+amixer set Master 10%-
+amixer -D pulse sset Master 5%-
+Για να μειώσεις τελείως τον ήχο χρησιμοποίησε αυτήν την εντολή :
+
+amixer set Master mute
+amixer -D pulse sset Master mute
+Για επαναφορά ήχου χρησιμοποίησε αυτήν την εντολή :
+
+amixer set Master unmute
+Για μείωση έντασης κατα 50% :
+
+amixer set Master -50%
+
+Για να αυξηθεί η ένταση 50% :
+
+amixer set Master 50%
+amixer -D pulse set Master 50%
